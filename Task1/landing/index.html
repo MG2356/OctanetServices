@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="content">Scroll &darr;</div>
+    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    <script>if ($('#back-to-top').length) {
+            var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').addClass('show');
+                    } else {
+                        $('#back-to-top').removeClass('show');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }</script>
+    <header>
+        <div class="llogo">
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+        </div>
+        <div id="menu-bar" class="fas fa-bars">
+        </div>
+        <div class="navbar-right">
+            <a href="./addrestaurant.html">Add Restaurant</a>
+            <a href="./login.html">Login</a>
+            <a href="./PDSsignup.html">Sign Up</a>
+        </div>
+
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#menu-bar').click(function(){
+                $('.navbar-right').toggleClass('show');
+                console.log('script execute')
+            })
+        })
+        
+        </script>
+        
+    <!--SEARCH BAR-->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h4><b>DISTRICT FOOD ZONE</b></h4>
+            <p>Explore The Food You LOVE <BR>
+                There's no sincerer love than the love of the food</p>
+            <a href="#" class="btnh"><b>EXPLORE NOW</b></a>
+        </div>
+
+        <div class="image">
+            <img src="assets/images/home-img.png" alt="">
+        </div>
+
+    </section>
+
+
+
+    <!--ORDER NOW-->
+
+
+    <section class="speciality" id="speciality">
+
+        <h1 class="heading"><B><span>ORDER</span> NOW</B> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="image" src="./assets/images/s-img-1.jpg" alt="">
+                <div class="content">
+                    <img src="./assets/images/s-1.png" alt="">
+                    <h3>Classic Burger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./assets/images/s-img-2.jpg" alt="">
+                <div class="content">
+                    <img src="./assets/images/s-2.png" alt="">
+                    <h3>Pizza Mania</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./assets/images/s-img-3.jpg" alt="">
+                <div class="content">
+                    <img src="./assets/images/s-3.png" alt="">
+                    <h3>Scoopy Spoon</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./assets/images/s-img-4.jpg" alt="">
+                <div class="content">
+                    <img src="./assets/images/s-4.png" alt="">
+                    <h3>Exotic Drinks</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./assets/images/s-img-5.jpg" alt="">
+                <div class="content">
+                    <img src="./assets/images/s-5.png" alt="">
+                    <h3>Trendy Sweets</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./assets/images/s-img-6.jpg" alt="">
+                <div class="content">
+                    <img src="./assets/images/s-6.png" alt="">
+                    <h3>Healthy Morning</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- speciality section ends -->
+
+    <!--COLLECTION-->
+
+
+
+    <section class="middle">
+        <div class="sec-2">
+            <h1 class="heading"><b>Our<span> Collection</b></span></h1>
+            <div class="explore">
+                <h4>
+                    Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi, based on trends
+                </h4>
+                <span>All collections in Delhi NCR &nbsp;<i class="fas fa-caret-right"></i></span>
+            </div>
+        </div>
+        <div class="sec-3">
+            <div class="box-1">
+                <div><span>Newly Opened<br> 17 places </span><i class="fas fa-caret-right"></i></div>
+                <img
+                    src="https://images.adsttc.com/media/images/6213/6121/b0be/7001/64e1/45ef/newsletter/ts-motherbkk-03.jpg?1645437241">
+            </div>
+            <div class="box-1">
+                <div><span>Trending This Week<br> 30 places </span><i class="fas fa-caret-right"></i></div>
+                <img src="https://www.wallacecollection.org/media/images/The_Wallace_Waldorf_salad_herb_and_yoghurt_dr.width-2000.jpg"
+                    height="200">
+            </div>
+            <div class="box-1">
+                <div><span>Best of Delhi NCR<br> 155 places </span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/pictures/1/18349771/3ccd922ce13419c0727fe653cad1b703.jpg?fit=around|318.75:231.25&crop=318.75:231.25;*,*"
+                    height="200">
+            </div>
+            <div class="box-1">
+                <div><span>Great Cafes<br> 30 places </span><i class="fas fa-caret-right"></i></div>
+                <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2928%2Ftrend20200901144420.jpg"
+                    height="200">
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+    <!-- steps section starts  -->
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            var element = document.querySelector(".fas");
+            if (element.classList.contains('fa-rotate-180')) {
+                element.classList.remove('fa-rotate-180');
+            } else {
+                element.classList.add('fa-rotate-180');
+            }
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
